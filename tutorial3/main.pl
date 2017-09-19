@@ -1,11 +1,15 @@
 use strict;
 use warnings;
-use LWP::Simple;
 
 sub main {
-   print "Downloading.....\n";	
-   print get("http://www.caveofprogramming.com");
-   print "\nFinished\n";
+   my $file='';
+
+   if(-f $file){
+	print "Found file \n";
+   }else{
+	print "file not found \n";
+	  }
+
 }
 
 main();
